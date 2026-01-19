@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="文章详情页">
+    <title>文章详情 - 个人博客</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">博客</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li><a href="archive.html" class="nav-link">归档</a></li>
+                <li><a href="about.html" class="nav-link">关于</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 文章内容区域 -->
+    <main class="main-content">
+        <article class="article-detail">
+            <div class="container article-container">
+                <!-- 返回链接 -->
+                <div class="back-nav">
+                    <a href="index.html" class="back-link">← 返回首页</a>
+                </div>
+
+                <!-- 文章头部 -->
+                <header class="article-header">
+                    <h1 id="article-title" class="article-title">加载中...</h1>
+                    <div id="article-meta" class="article-meta">
+                        <span class="meta-date"></span>
+                        <span class="meta-divider">·</span>
+                        <span class="meta-author"></span>
+                        <span class="meta-divider">·</span>
+                        <span class="meta-tags"></span>
+                    </div>
+                </header>
+
+                <!-- 文章内容 -->
+                <div id="article-content" class="article-content">
+                    <div class="loading">正在加载文章...</div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2024 个人博客. 用心记录生活的每一刻</p>
+        </div>
+    </footer>
+
+    <script src="js/article.js"></script>
+</body>
+</html>
